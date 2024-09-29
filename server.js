@@ -6,7 +6,7 @@ const cors = require('cors');
 const res = require('express/lib/response');
 // CRIANDO SERVIDOR
 const app = express();
-const PORT = 2828;
+const PORT = process.env.PORT || 2828;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
